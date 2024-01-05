@@ -147,7 +147,7 @@ function updateScoreboard()
 
     const tbody = document.createElement('tbody');
     scoreboard.forEach((element,index) => {
-        const row = document.createElement('row');
+        const row = document.createElement('tr');
         const gameNum = document.createElement('td');
         const winner = document.createElement('td');
         gameNum.textContent = index+1;

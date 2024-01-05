@@ -71,16 +71,18 @@ body{
 }
 
 table{
-    width: 500px;
+    margin: 20px;
+    border: 1px solid black;
+    width: 300px;
+    border-collapse: collapse;
 }
 
-thead tbody{
+thead th{
     border: 1px solid black;
     text-align: center;
-    width: 500;
 }
 
-td{
-    display: block  ;
+tbody td{
+    border: 1px solid black;
+    text-align: center;
 }
-  
