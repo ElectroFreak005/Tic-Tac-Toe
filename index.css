@@ -1,0 +1,86 @@
+body{
+    background-color: #F8FAE5;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    padding: 0;
+    border: 1px solid black;
+    font-size: 2em;
+}
+
+.heading{
+    font-size: 5em;
+    font-family: "rubik doodle shadow";
+}
+
+.element{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100px;
+}
+
+.Winning-message{
+    margin: 20px;
+    font-size: 1.5em;
+    font-family: 'Bungee Spice', sans-serif;
+    color: black;
+    padding: 10px;
+}
+
+.reset-btn{
+    margin: 5px 20px 20px 20px;
+}
+
+.reset{
+    padding: 5px;
+    border: 1px solid darksalmon;
+    border-radius: 10%;
+    font-family: 'Bungee Spice', sans-serif;
+    background-color: #B4D4FF;
+}
+
+.reset:hover{
+    background-color: #86B6F6;
+}
+
+.scoreboard{
+    font-family: 'Oswald', sans-serif;
+}
+
+table{
+    width: 500px;
+}
+
+thead tbody{
+    border: 1px solid black;
+    text-align: center;
+    width: 500;
+}
+
+td{
+    display: block  ;
+}
+  
