@@ -84,15 +84,15 @@ function checkForWin()
     }
     if(x_list.length+o_list.length == 9)
     {
-        if(is_win)
-        {
-        gameOver = true;
-        winner = current_player;
-        scoreboard.push(current_player);
-        updateScoreboard();
-        document.querySelector('.Winning-message').innerHTML = `Winner is ${winner == x_player ? 'Player 1' : 'Player 2'}`;
-        return;
-        }
+        // if(is_win)
+        // {
+        // gameOver = true;
+        // winner = current_player;
+        // scoreboard.push(current_player);
+        // updateScoreboard();
+        // document.querySelector('.Winning-message').innerHTML = `Winner is ${winner == x_player ? 'Player 1' : 'Player 2'}`;
+        // return;
+        // }
         gameOver = true;
         scoreboard.push('draw');
         updateScoreboard();
@@ -151,7 +151,7 @@ function updateScoreboard()
         const gameNum = document.createElement('td');
         const winner = document.createElement('td');
         gameNum.textContent = index+1;
-        winner.textContent = element == x_player ? 'Player 1' : 'Player 2';
+        winner.textContent = element == 'draw' ? 'draw' : (element == x_player ? 'Player 1' : 'Player 2');
         row.appendChild(gameNum);
         row.appendChild(winner);
         tbody.appendChild(row);
